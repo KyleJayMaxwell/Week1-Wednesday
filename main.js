@@ -69,10 +69,21 @@ console.log(itemLast);
 // ["plant", "keyboard", "book", "mug", "First"]
 
 // 11. Remove all items from itemLast (No need to write to the document. Just console.log to test your results)
+itemLast.pop();
+itemLast.pop();
+itemLast.pop();
+itemLast.pop();
+itemLast.pop();
+
+console.log(itemLast);
+// []
 
 // 12. Using the Arrays below, create a single Array called numberPets whose value is [12, 5, 9, 27, 'fish', 'dog']
 var firstArray = [12, 5, 9, 27];
 var secondArray = ['fish', 'dog'];
+var newArray = firstArray.concat(secondArray);
+console.log(newArray);
+// [12, 5, 9, 27, 'fish', 'dog'];
 
 // Use the following array for questions 13-16:
 var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug'];
@@ -84,10 +95,28 @@ console.log(people);
 ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug', 'Craig', 'Hunter']
 
 // 14. Remove everybody except 'Andrea' and 'Ted'
+people.pop();
+people.pop();
+people.pop();
+consle.log(people);
+// ["Bill", "Ted", "Emily", "Andrea"]
+
+people.shift();
+console.log(people);
+// ["Ted", "Emily", "Andrea"]
+
+people.splice(1,1);
+console.log(people);
+// ["Ted", "Andrea"]
 
 // 15. Add a new person to the beginning of the Array
+people.unshift('Pablo');
+console.log(people);
+// ["Pablo", "Ted", "Andrea"]
 
 // 16. Arrange the items alphabetically. Store this Array as orderedPeople
+people.sort();
+// ["Andrea", "Pablo", "Ted"]
 
 // 17. Create an array of arrays with the following three arrays:
 var array1 = ["Fido", "Spot", "Rex", "Sparky"]

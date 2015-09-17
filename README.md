@@ -1,3 +1,4 @@
+#!KYLE!#
 #Outline for Wednesday 9/16
 - Recap yesterday, go over homework
 - Introduce Arrays

@@ -123,6 +123,9 @@ var array1 = ["Fido", "Spot", "Rex", "Sparky"]
 var array2 = ["Bulldog", "Lab", "Dalmation", "Beagle"]
 var array3 = ["White", "Black", "Spotted", "Tri-color"]
 
+var array4 = [array1, array2, array3];
+
+console.log(array4);
 // Goal:
 var array4 = [
                 ["Fido", "Spot", "Rex", "Sparky"],
@@ -132,12 +135,43 @@ var array4 = [
 
 // 18. Remove "Sparky" and "White" from the above array of arrays.
 
+var deadDog = array1.pop() + array3.shift();
+
+console.log(array4);
+
+// [
+//	["Fido", "Spot", "Rex"],
+//	["Bulldog", "Lab", "Dalmation", "Beagle"],
+//  [Black", "Spotted", "Tri-color"]
+// ]
+
+
+
 // BONUS 1: Try to arrange the following items from smallest to largest:
 var sortingNumbers = [2, 5, 98, 55, 77, 300]
 // Explain why it doesn't sort as expected.
 
+sortingNumbers.sort();
+// [2, 300, 5, 55, 77, 98]
+It sorted least to greatest by the first number then after it. Very interesting.
+
 // BONUS 2: Transform array1 into array2 using as few lines of code as you can without directly changing the value of an item (ie array1[0] = item)
 var array1 = [2, 'dog', 34, 'Bill', 'plant', 'mug', 17];
+
+var line1 = array1.splice(4, 1, 'dog');
+// [2, "dog", 34, "Bill", "dog", "mug", 17]
+var line2 = array1.pop();
+// [2, "dog", 34, "Bill", "dog", "mug"]
+var line3 = array1.pop();
+// [2, "dog", 34, "Bill", "dog"]
+var line4 = array1.splice(1, 1);
+// [2, 34, "Bill", "dog"]
+var line5 = array1.splice(1, 1);
+// [2, "Bill", "dog"]
+var line6 = array1.unshift(17);
+// [17, 2, "Bill", "dog"]
+var line7 = array1.unshift('plant');
+// ["plant", 17, 2, "Bill", "dog"]
 
 //Goal
 var array2 = ['plant', 17, 2, 'Bill', 'dog'];

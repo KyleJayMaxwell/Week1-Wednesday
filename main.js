@@ -135,6 +135,14 @@ var array4 = [
 
 // 18. Remove "Sparky" and "White" from the above array of arrays.
 
+// array of arrays are the same. 
+
+array4[0].pop(); 
+// Sparky
+
+array4[2].shift();
+// White
+ 
 var deadDog = array1.pop() + array3.shift();
 
 console.log(array4);
